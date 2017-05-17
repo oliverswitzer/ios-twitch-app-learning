@@ -1,0 +1,23 @@
+{
+  "id" : "76f4bd1a-c101-32ab-90e3-5b85fbfd61bc",
+  "request" : {
+    "url" : "/misterrogers/emotes",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "equalTo" : "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-misterrogers-emotes-zLS8p.json",
+    "headers" : {
+      "Content-Type" : "application/json;charset=UTF-8",
+      "Date" : "Tue, 16 May 2017 15:51:21 GMT",
+      "X-Vcap-Request-Id" : "a6d56357-f356-4d86-4823-206d3693d45f",
+      "Connection" : "keep-alive"
+    }
+  },
+  "uuid" : "76f4bd1a-c101-32ab-90e3-5b85fbfd61bc"
+}

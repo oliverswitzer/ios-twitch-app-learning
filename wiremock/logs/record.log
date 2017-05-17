@@ -1,0 +1,88 @@
+Starting Wiremock in record mode on port 8082
+Storing mappings to ./wiremock
+2017-05-16 11:49:33.295 Verbose logging enabled
+2017-05-16 11:49:33.704 Verbose logging enabled
+2017-05-16 11:49:33.742 Recording mappings to ./wiremock/mappings
+ /$$      /$$ /$$                     /$$      /$$                     /$$      
+| $$  /$ | $$|__/                    | $$$    /$$$                    | $$      
+| $$ /$$$| $$ /$$  /$$$$$$   /$$$$$$ | $$$$  /$$$$  /$$$$$$   /$$$$$$$| $$   /$$
+| $$/$$ $$ $$| $$ /$$__  $$ /$$__  $$| $$ $$/$$ $$ /$$__  $$ /$$_____/| $$  /$$/
+| $$$$_  $$$$| $$| $$  \__/| $$$$$$$$| $$  $$$| $$| $$  \ $$| $$      | $$$$$$/ 
+| $$$/ \  $$$| $$| $$      | $$_____/| $$\  $ | $$| $$  | $$| $$      | $$_  $$ 
+| $$/   \  $$| $$| $$      |  $$$$$$$| $$ \/  | $$|  $$$$$$/|  $$$$$$$| $$ \  $$
+|__/     \__/|__/|__/       \_______/|__/     |__/ \______/  \_______/|__/  \__/
+
+port:                         8082
+proxy-all:                    http://twitch.cfapps.io/
+preserve-host-header:         false
+enable-browser-proxying:      false
+record-mappings:              true
+match-headers:                [Accept, Content-Type, Authorization]
+no-request-journal:           false
+verbose:                      true
+
+2017-05-16 11:51:21.654 Proxying: GET http://twitch.cfapps.io//misterrogers/emotes
+2017-05-16 11:51:22.027 Request received:
+0:0:0:0:0:0:0:1 - GET /misterrogers/emotes
+
+Cookie: [Idea-83e9bb99=f16d0580-e057-4305-acb0-70be19b86d1d; JSESSIONID=57907A499F81606088D711DF7FEB1473]
+Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8]
+Upgrade-Insecure-Requests: [1]
+Connection: [keep-alive]
+User-Agent: [Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36]
+Host: [localhost:8082]
+Accept-Encoding: [gzip, deflate, sdch, br]
+Accept-Language: [en-US,en;q=0.8]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "proxyBaseUrl" : "http://twitch.cfapps.io/"
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json;charset=UTF-8]
+Date: [Tue, 16 May 2017 15:51:21 GMT]
+X-Vcap-Request-Id: [a6d56357-f356-4d86-4823-206d3693d45f]
+Content-Length: [494]
+Connection: [keep-alive]
+
+{"PogChamp":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/88/3.0","count":12},"Kappa":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/25/3.0","count":11},"NotLikeThis":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/58765/3.0","count":2},"WutFace":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/28087/3.0","count":5},"Jebaited":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/114836/3.0","count":1},"BibleThump":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/86/3.0","count":1}}
+
+2017-05-16 11:51:22.030 Recording mappings for /misterrogers/emotes
+2017-05-16 11:51:22.175 Proxying: GET http://twitch.cfapps.io//favicon.ico
+2017-05-16 11:51:22.225 Request received:
+0:0:0:0:0:0:0:1 - GET /favicon.ico
+
+Cookie: [Idea-83e9bb99=f16d0580-e057-4305-acb0-70be19b86d1d; JSESSIONID=57907A499F81606088D711DF7FEB1473]
+Accept: [image/webp,image/*,*/*;q=0.8]
+Connection: [keep-alive]
+User-Agent: [Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36]
+Referer: [http://localhost:8082/misterrogers/emotes]
+Host: [localhost:8082]
+Accept-Encoding: [gzip, deflate, sdch, br]
+Accept-Language: [en-US,en;q=0.8]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "proxyBaseUrl" : "http://twitch.cfapps.io/"
+}
+
+Response:
+HTTP/1.1 404
+Content-Type: [application/json;charset=UTF-8]
+Date: [Tue, 16 May 2017 15:51:21 GMT]
+X-Vcap-Request-Id: [ac66a0d9-3af4-4bd0-67e1-15ab2629460f]
+Content-Length: [115]
+Connection: [keep-alive]
+
+{"timestamp":1494949882210,"status":404,"error":"Not Found","message":"No message available","path":"/favicon.ico"}
+
+2017-05-16 11:51:22.228 Recording mappings for /favicon.ico
+2017-05-16 11:51:56.948 Received request to /shutdown with body 

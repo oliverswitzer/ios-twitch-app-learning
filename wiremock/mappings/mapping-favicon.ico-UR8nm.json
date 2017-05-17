@@ -1,0 +1,23 @@
+{
+  "id" : "5f99a8d3-0cab-3f6a-997c-014d01c6db67",
+  "request" : {
+    "url" : "/favicon.ico",
+    "method" : "GET",
+    "headers" : {
+      "Accept" : {
+        "equalTo" : "image/webp,image/*,*/*;q=0.8"
+      }
+    }
+  },
+  "response" : {
+    "status" : 404,
+    "bodyFileName" : "body-favicon.ico-UR8nm.json",
+    "headers" : {
+      "Content-Type" : "application/json;charset=UTF-8",
+      "Date" : "Tue, 16 May 2017 15:51:21 GMT",
+      "X-Vcap-Request-Id" : "ac66a0d9-3af4-4bd0-67e1-15ab2629460f",
+      "Connection" : "keep-alive"
+    }
+  },
+  "uuid" : "5f99a8d3-0cab-3f6a-997c-014d01c6db67"
+}
