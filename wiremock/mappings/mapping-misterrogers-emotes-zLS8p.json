@@ -2,12 +2,7 @@
   "id" : "76f4bd1a-c101-32ab-90e3-5b85fbfd61bc",
   "request" : {
     "url" : "/misterrogers/emotes",
-    "method" : "GET",
-    "headers" : {
-      "Accept" : {
-        "equalTo" : "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"
-      }
-    }
+    "method" : "GET"
   },
   "response" : {
     "status" : 200,

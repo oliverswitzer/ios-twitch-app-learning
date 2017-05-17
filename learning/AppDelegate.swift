@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         let window = UIWindow()
-        let viewController = ViewController(nibName: "ViewController", bundle: nil);
+        let viewController = ViewController(service: TwitchCollectorServiceImpl(urlSession: URLSession.shared, mainDispatcher: MainDispatcher()));
         window.rootViewController = viewController;
         window.makeKeyAndVisible()
         self.window = window

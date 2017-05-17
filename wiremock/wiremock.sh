@@ -7,7 +7,6 @@ START=true
 STOP=false
 RECORD=false
 API_URL="http://twitch.cfapps.io/"
-MATCH_HEADERS="Accept,Content-Type,Authorization"
 
 function usage
 {
@@ -65,5 +64,5 @@ then
     exec > $WIREMOCK_DIR/logs/record.log
     echo "Starting Wiremock in record mode on port $PORT"
     echo "Storing mappings to $MAPPINGS_DIR"
-    java -jar $WIREMOCK_DIR/wiremock.jar --proxy-all "$API_URL" --record-mappings --match-headers "$MATCH_HEADERS" --verbose --port $PORT --root-dir $MAPPINGS_DIR &
+    java -jar $WIREMOCK_DIR/wiremock.jar --proxy-all "$API_URL" --record-mappings --verbose --port $PORT --root-dir $MAPPINGS_DIR &
 fi

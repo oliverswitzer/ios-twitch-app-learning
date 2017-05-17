@@ -1,6 +1,6 @@
 Starting Wiremock in play mode on port 8082 with mappings from ./wiremock
-2017-05-16 11:53:27.954 Verbose logging enabled
-2017-05-16 11:53:28.618 Verbose logging enabled
+2017-05-17 16:17:35.327 Verbose logging enabled
+2017-05-17 16:17:35.978 Verbose logging enabled
  /$$      /$$ /$$                     /$$      /$$                     /$$      
 | $$  /$ | $$|__/                    | $$$    /$$$                    | $$      
 | $$ /$$$| $$ /$$  /$$$$$$   /$$$$$$ | $$$$  /$$$$  /$$$$$$   /$$$$$$$| $$   /$$
@@ -15,18 +15,15 @@ enable-browser-proxying:      false
 no-request-journal:           false
 verbose:                      true
 
-2017-05-16 11:53:34.020 Request received:
+2017-05-17 16:18:04.767 Request received:
 0:0:0:0:0:0:0:1 - GET /misterrogers/emotes
 
-Cookie: [Idea-83e9bb99=f16d0580-e057-4305-acb0-70be19b86d1d; JSESSIONID=57907A499F81606088D711DF7FEB1473]
-Cache-Control: [max-age=0]
-Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8]
-Upgrade-Insecure-Requests: [1]
 Connection: [keep-alive]
-User-Agent: [Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36]
+User-Agent: [learning/1 CFNetwork/811.4.18 Darwin/16.5.0]
 Host: [localhost:8082]
-Accept-Encoding: [gzip, deflate, sdch, br]
-Accept-Language: [en-US,en;q=0.8]
+Accept-Language: [en-us]
+Accept-Encoding: [gzip, deflate]
+Accept: [*/*]
 
 
 
@@ -51,18 +48,15 @@ Connection: [keep-alive]
 
 {"PogChamp":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/88/3.0","count":12},"Kappa":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/25/3.0","count":11},"NotLikeThis":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/58765/3.0","count":2},"WutFace":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/28087/3.0","count":5},"Jebaited":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/114836/3.0","count":1},"BibleThump":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/86/3.0","count":1}}
 
-2017-05-16 11:53:45.033 Request received:
+2017-05-17 16:18:05.536 Request received:
 0:0:0:0:0:0:0:1 - GET /misterrogers/emotes
 
-Cookie: [Idea-83e9bb99=f16d0580-e057-4305-acb0-70be19b86d1d; JSESSIONID=57907A499F81606088D711DF7FEB1473]
-Cache-Control: [max-age=0]
-Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8]
-Upgrade-Insecure-Requests: [1]
 Connection: [keep-alive]
-User-Agent: [Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36]
+User-Agent: [learning/1 CFNetwork/811.4.18 Darwin/16.5.0]
 Host: [localhost:8082]
-Accept-Encoding: [gzip, deflate, sdch, br]
-Accept-Language: [en-US,en;q=0.8]
+Accept-Language: [en-us]
+Accept-Encoding: [gzip, deflate]
+Accept: [*/*]
 
 
 
@@ -87,10 +81,289 @@ Connection: [keep-alive]
 
 {"PogChamp":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/88/3.0","count":12},"Kappa":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/25/3.0","count":11},"NotLikeThis":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/58765/3.0","count":2},"WutFace":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/28087/3.0","count":5},"Jebaited":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/114836/3.0","count":1},"BibleThump":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/86/3.0","count":1}}
 
-2017-05-16 13:50:59.316 Request received:
+2017-05-17 16:38:08.992 Request received:
+0:0:0:0:0:0:0:1 - GET /misterrogers/emotes
+
+Connection: [keep-alive]
+User-Agent: [learning/1 CFNetwork/811.4.18 Darwin/16.5.0]
+Host: [localhost:8082]
+Accept-Language: [en-us]
+Accept-Encoding: [gzip, deflate]
+Accept: [*/*]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "bodyFileName" : "body-misterrogers-emotes-zLS8p.json",
+  "headers" : {
+    "Content-Type" : "application/json;charset=UTF-8",
+    "Date" : "Tue, 16 May 2017 15:51:21 GMT",
+    "X-Vcap-Request-Id" : "a6d56357-f356-4d86-4823-206d3693d45f",
+    "Connection" : "keep-alive"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json;charset=UTF-8]
+Date: [Tue, 16 May 2017 15:51:21 GMT]
+X-Vcap-Request-Id: [a6d56357-f356-4d86-4823-206d3693d45f]
+Connection: [keep-alive]
+
+{"PogChamp":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/88/3.0","count":12},"Kappa":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/25/3.0","count":11},"NotLikeThis":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/58765/3.0","count":2},"WutFace":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/28087/3.0","count":5},"Jebaited":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/114836/3.0","count":1},"BibleThump":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/86/3.0","count":1}}
+
+2017-05-17 16:38:09.826 Request received:
+0:0:0:0:0:0:0:1 - GET /misterrogers/emotes
+
+Connection: [keep-alive]
+User-Agent: [learning/1 CFNetwork/811.4.18 Darwin/16.5.0]
+Host: [localhost:8082]
+Accept-Language: [en-us]
+Accept-Encoding: [gzip, deflate]
+Accept: [*/*]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "bodyFileName" : "body-misterrogers-emotes-zLS8p.json",
+  "headers" : {
+    "Content-Type" : "application/json;charset=UTF-8",
+    "Date" : "Tue, 16 May 2017 15:51:21 GMT",
+    "X-Vcap-Request-Id" : "a6d56357-f356-4d86-4823-206d3693d45f",
+    "Connection" : "keep-alive"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json;charset=UTF-8]
+Date: [Tue, 16 May 2017 15:51:21 GMT]
+X-Vcap-Request-Id: [a6d56357-f356-4d86-4823-206d3693d45f]
+Connection: [keep-alive]
+
+{"PogChamp":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/88/3.0","count":12},"Kappa":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/25/3.0","count":11},"NotLikeThis":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/58765/3.0","count":2},"WutFace":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/28087/3.0","count":5},"Jebaited":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/114836/3.0","count":1},"BibleThump":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/86/3.0","count":1}}
+
+2017-05-17 16:39:56.600 Request received:
+0:0:0:0:0:0:0:1 - GET /my/emotes
+
+Connection: [keep-alive]
+User-Agent: [learning/1 CFNetwork/811.4.18 Darwin/16.5.0]
+Host: [localhost:8082]
+Accept-Language: [en-us]
+Accept-Encoding: [gzip, deflate]
+Accept: [*/*]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2017-05-17 16:39:57.549 Request received:
+0:0:0:0:0:0:0:1 - GET /my/emotes
+
+Connection: [keep-alive]
+User-Agent: [learning/1 CFNetwork/811.4.18 Darwin/16.5.0]
+Host: [localhost:8082]
+Accept-Language: [en-us]
+Accept-Encoding: [gzip, deflate]
+Accept: [*/*]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2017-05-17 16:40:39.174 Request received:
+0:0:0:0:0:0:0:1 - GET /maybe/emotes
+
+Connection: [keep-alive]
+User-Agent: [learning/1 CFNetwork/811.4.18 Darwin/16.5.0]
+Host: [localhost:8082]
+Accept-Language: [en-us]
+Accept-Encoding: [gzip, deflate]
+Accept: [*/*]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2017-05-17 16:40:40.159 Request received:
+0:0:0:0:0:0:0:1 - GET /maybe/emotes
+
+Connection: [keep-alive]
+User-Agent: [learning/1 CFNetwork/811.4.18 Darwin/16.5.0]
+Host: [localhost:8082]
+Accept-Language: [en-us]
+Accept-Encoding: [gzip, deflate]
+Accept: [*/*]
+
+
+
+Matched response definition:
+(no response definition configured)
+
+Response:
+HTTP/1.1 404
+(no headers)
+
+
+2017-05-17 16:41:30.811 Request received:
+0:0:0:0:0:0:0:1 - GET /misterrogers/emotes
+
+Connection: [keep-alive]
+User-Agent: [learning/1 CFNetwork/811.4.18 Darwin/16.5.0]
+Host: [localhost:8082]
+Accept-Language: [en-us]
+Accept-Encoding: [gzip, deflate]
+Accept: [*/*]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "bodyFileName" : "body-misterrogers-emotes-zLS8p.json",
+  "headers" : {
+    "Content-Type" : "application/json;charset=UTF-8",
+    "Date" : "Tue, 16 May 2017 15:51:21 GMT",
+    "X-Vcap-Request-Id" : "a6d56357-f356-4d86-4823-206d3693d45f",
+    "Connection" : "keep-alive"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json;charset=UTF-8]
+Date: [Tue, 16 May 2017 15:51:21 GMT]
+X-Vcap-Request-Id: [a6d56357-f356-4d86-4823-206d3693d45f]
+Connection: [keep-alive]
+
+{"PogChamp":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/88/3.0","count":12},"Kappa":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/25/3.0","count":11},"NotLikeThis":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/58765/3.0","count":2},"WutFace":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/28087/3.0","count":5},"Jebaited":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/114836/3.0","count":1},"BibleThump":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/86/3.0","count":1}}
+
+2017-05-17 16:41:31.722 Request received:
+0:0:0:0:0:0:0:1 - GET /misterrogers/emotes
+
+Connection: [keep-alive]
+User-Agent: [learning/1 CFNetwork/811.4.18 Darwin/16.5.0]
+Host: [localhost:8082]
+Accept-Language: [en-us]
+Accept-Encoding: [gzip, deflate]
+Accept: [*/*]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "bodyFileName" : "body-misterrogers-emotes-zLS8p.json",
+  "headers" : {
+    "Content-Type" : "application/json;charset=UTF-8",
+    "Date" : "Tue, 16 May 2017 15:51:21 GMT",
+    "X-Vcap-Request-Id" : "a6d56357-f356-4d86-4823-206d3693d45f",
+    "Connection" : "keep-alive"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json;charset=UTF-8]
+Date: [Tue, 16 May 2017 15:51:21 GMT]
+X-Vcap-Request-Id: [a6d56357-f356-4d86-4823-206d3693d45f]
+Connection: [keep-alive]
+
+{"PogChamp":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/88/3.0","count":12},"Kappa":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/25/3.0","count":11},"NotLikeThis":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/58765/3.0","count":2},"WutFace":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/28087/3.0","count":5},"Jebaited":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/114836/3.0","count":1},"BibleThump":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/86/3.0","count":1}}
+
+2017-05-17 16:42:09.492 Request received:
+0:0:0:0:0:0:0:1 - GET /misterrogers/emotes
+
+Connection: [keep-alive]
+User-Agent: [learning/1 CFNetwork/811.4.18 Darwin/16.5.0]
+Host: [localhost:8082]
+Accept-Language: [en-us]
+Accept-Encoding: [gzip, deflate]
+Accept: [*/*]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "bodyFileName" : "body-misterrogers-emotes-zLS8p.json",
+  "headers" : {
+    "Content-Type" : "application/json;charset=UTF-8",
+    "Date" : "Tue, 16 May 2017 15:51:21 GMT",
+    "X-Vcap-Request-Id" : "a6d56357-f356-4d86-4823-206d3693d45f",
+    "Connection" : "keep-alive"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json;charset=UTF-8]
+Date: [Tue, 16 May 2017 15:51:21 GMT]
+X-Vcap-Request-Id: [a6d56357-f356-4d86-4823-206d3693d45f]
+Connection: [keep-alive]
+
+{"PogChamp":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/88/3.0","count":12},"Kappa":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/25/3.0","count":11},"NotLikeThis":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/58765/3.0","count":2},"WutFace":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/28087/3.0","count":5},"Jebaited":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/114836/3.0","count":1},"BibleThump":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/86/3.0","count":1}}
+
+2017-05-17 16:42:10.426 Request received:
+0:0:0:0:0:0:0:1 - GET /misterrogers/emotes
+
+Connection: [keep-alive]
+User-Agent: [learning/1 CFNetwork/811.4.18 Darwin/16.5.0]
+Host: [localhost:8082]
+Accept-Language: [en-us]
+Accept-Encoding: [gzip, deflate]
+Accept: [*/*]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "bodyFileName" : "body-misterrogers-emotes-zLS8p.json",
+  "headers" : {
+    "Content-Type" : "application/json;charset=UTF-8",
+    "Date" : "Tue, 16 May 2017 15:51:21 GMT",
+    "X-Vcap-Request-Id" : "a6d56357-f356-4d86-4823-206d3693d45f",
+    "Connection" : "keep-alive"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json;charset=UTF-8]
+Date: [Tue, 16 May 2017 15:51:21 GMT]
+X-Vcap-Request-Id: [a6d56357-f356-4d86-4823-206d3693d45f]
+Connection: [keep-alive]
+
+{"PogChamp":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/88/3.0","count":12},"Kappa":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/25/3.0","count":11},"NotLikeThis":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/58765/3.0","count":2},"WutFace":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/28087/3.0","count":5},"Jebaited":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/114836/3.0","count":1},"BibleThump":{"url":"https://static-cdn.jtvnw.net/emoticons/v1/86/3.0","count":1}}
+
+2017-05-17 17:02:13.536 Request received:
 0:0:0:0:0:0:0:1 - GET /misterrogers/emotes
 
 Cookie: [Idea-83e9bb99=f16d0580-e057-4305-acb0-70be19b86d1d; JSESSIONID=57907A499F81606088D711DF7FEB1473]
+Cache-Control: [max-age=0]
 Accept: [text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8]
 Upgrade-Insecure-Requests: [1]
 Connection: [keep-alive]

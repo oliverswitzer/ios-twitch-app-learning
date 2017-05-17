@@ -13,13 +13,13 @@ import Nimble
 
 class TwitchCollectorServiceSpec: QuickSpec {
     override func spec() {
-        var subject: TwitchCollectorService!
+        var subject: TwitchCollectorServiceImpl!
         var urlSession: MockUrlSession!
         
         beforeEach {
             urlSession = MockUrlSession()
             
-            subject = TwitchCollectorService(urlSession: urlSession)
+            subject = TwitchCollectorServiceImpl(urlSession: urlSession, mainDispatcher: SyncDispatcher())
         }
         
         describe("emotes") {
@@ -39,9 +39,9 @@ class TwitchCollectorServiceSpec: QuickSpec {
             }
             
             it("should make a GET request to channelName/emotes") {
-                expect(urlSession.numberOfDataTaskCalls).to(equal(1))
-                expect(urlSession.url).to(equal(URL(string: "http://twitch.cfapps.io/channelName/emotes")!))
-                expect(urlSession.dataTaskToReturn?.numberOfResumeCalls).to(equal(1))
+                expect(urlSession.numberOfDataTaskCalls) == 1
+                expect(urlSession.url) == URL(string: "http://twitch.cfapps.io/channelName/emotes")!
+                expect(urlSession.dataTaskToReturn?.numberOfResumeCalls) == 1
             }
             
             context("on success") {
@@ -115,4 +115,11 @@ class MockDataTask: URLSessionDataTaskProtocol {
     func resume() {
         numberOfResumeCalls += 1
     }
+}
+
+class SyncDispatcher: Dispatcher {
+    func async(_ closure: @escaping () -> Void) {
+        closure()
+    }
+
 }

@@ -8,23 +8,43 @@
 
 import Foundation
 
-internal class TwitchCollectorService {
+protocol TwitchCollectorService {
+    func emotes(channelName: String,
+                success successCallback: @escaping (Array<Emote>) -> Void,
+                error errorCallback: @escaping (Error) -> Void)
+}
+
+class TwitchCollectorServiceImpl: TwitchCollectorService {
     let urlSession: URLSessionProtocol
+    let mainDispatcher: Dispatcher
     
-    init(urlSession: URLSessionProtocol) {
+    init(urlSession: URLSessionProtocol, mainDispatcher: Dispatcher) {
         self.urlSession = urlSession
+        self.mainDispatcher = mainDispatcher
     }
 
-    func emotes(channelName: String, success successCallback: @escaping (Array<Emote>) -> Void, error errorCallback: @escaping (Error) -> Void) {
-        self.urlSession.dataTask(with: URL(string: "http://twitch.cfapps.io/channelName/emotes")!) { (data, response, error) in
+    func emotes(channelName: String,
+                success successCallback: @escaping (Array<Emote>) -> Void,
+                error errorCallback: @escaping (Error) -> Void) {
+        var host = "http://twitch.cfapps.io"
+#if DEBUG
+        if ProcessInfo.processInfo.arguments.contains("USE_LOCALHOST") {
+            host = "http://localhost:8082"
+        }
+#endif
+        self.urlSession.dataTask(with: URL(string: "\(host)/\(channelName)/emotes")!) { (data, response, error) in
                     if let unwrappedError = error {
-                        errorCallback(unwrappedError)
+                        self.mainDispatcher.async {
+                            errorCallback(unwrappedError)
+                        }
                         return
                     }
 
                     guard let unwrappedData = data,
                           let json = (try? JSONSerialization.jsonObject(with: unwrappedData)) as? Dictionary<String, Dictionary<String, Any>> else {
-                        errorCallback(TwitchCollectorError.unexpectedResponse)
+                        self.mainDispatcher.async {
+                            errorCallback(TwitchCollectorError.unexpectedResponse)
+                        }
                         return
                     }
 
@@ -36,7 +56,9 @@ internal class TwitchCollectorService {
 
                         return Emote(name: key, url: url, count: count)
                     }
-                    successCallback(result)
+                    self.mainDispatcher.async {
+                        successCallback(result)
+                    }
                 }
                 .resume()
     }

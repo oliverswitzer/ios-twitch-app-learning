@@ -12,6 +12,8 @@
 		AE022B1F1ECB7AF900CAA844 /* TwitchCollectorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE022B1E1ECB7AF900CAA844 /* TwitchCollectorService.swift */; };
 		AE022B211ECB7B9E00CAA844 /* TwitchCollectorServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE022B201ECB7B9E00CAA844 /* TwitchCollectorServiceSpec.swift */; };
 		AE022B231ECB7F9700CAA844 /* UrlSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE022B221ECB7F9700CAA844 /* UrlSessionProtocol.swift */; };
+		AE022B261ECCB04E00CAA844 /* ViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE022B251ECCB04E00CAA844 /* ViewControllerSpec.swift */; };
+		AE022B2C1ECCEAF500CAA844 /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE99C05D29B6D34A382872E5 /* Dispatcher.swift */; };
 		AE1388231ECB41BD00EEF147 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1388221ECB41BD00EEF147 /* AppDelegate.swift */; };
 		AE1388251ECB41BD00EEF147 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE1388241ECB41BD00EEF147 /* ViewController.swift */; };
 		AE13882A1ECB41BD00EEF147 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE1388291ECB41BD00EEF147 /* Assets.xcassets */; };
@@ -45,6 +47,7 @@
 		AE022B1E1ECB7AF900CAA844 /* TwitchCollectorService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitchCollectorService.swift; sourceTree = "<group>"; };
 		AE022B201ECB7B9E00CAA844 /* TwitchCollectorServiceSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwitchCollectorServiceSpec.swift; sourceTree = "<group>"; };
 		AE022B221ECB7F9700CAA844 /* UrlSessionProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlSessionProtocol.swift; sourceTree = "<group>"; };
+		AE022B251ECCB04E00CAA844 /* ViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSpec.swift; sourceTree = "<group>"; };
 		AE13881F1ECB41BD00EEF147 /* learning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = learning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE1388221ECB41BD00EEF147 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE1388241ECB41BD00EEF147 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +60,7 @@
 		AE1388501ECB491100EEF147 /* learningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = learningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE1388521ECB491100EEF147 /* learningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = learningUITests.swift; sourceTree = "<group>"; };
 		AE1388541ECB491100EEF147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE99C05D29B6D34A382872E5 /* Dispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dispatcher.swift; sourceTree = "<group>"; };
 		DE99C127F16949E7EFFC31BD /* CannedResponseUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CannedResponseUtil.swift; sourceTree = "<group>"; };
 		DE99CAEA3114C702A7DCB60D /* emotes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = emotes.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,6 +133,7 @@
 				AE13882E1ECB41BD00EEF147 /* Info.plist */,
 				AE022B1E1ECB7AF900CAA844 /* TwitchCollectorService.swift */,
 				AE022B221ECB7F9700CAA844 /* UrlSessionProtocol.swift */,
+				DE99C05D29B6D34A382872E5 /* Dispatcher.swift */,
 			);
 			path = learning;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 				AE022B201ECB7B9E00CAA844 /* TwitchCollectorServiceSpec.swift */,
 				DE99CAEA3114C702A7DCB60D /* emotes.json */,
 				DE99C127F16949E7EFFC31BD /* CannedResponseUtil.swift */,
+				AE022B251ECCB04E00CAA844 /* ViewControllerSpec.swift */,
 			);
 			path = learningTests;
 			sourceTree = "<group>";
@@ -313,6 +319,7 @@
 				AE022B231ECB7F9700CAA844 /* UrlSessionProtocol.swift in Sources */,
 				AE1388231ECB41BD00EEF147 /* AppDelegate.swift in Sources */,
 				AE022B1F1ECB7AF900CAA844 /* TwitchCollectorService.swift in Sources */,
+				AE022B2C1ECCEAF500CAA844 /* Dispatcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +327,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE022B261ECCB04E00CAA844 /* ViewControllerSpec.swift in Sources */,
 				AE022B211ECB7B9E00CAA844 /* TwitchCollectorServiceSpec.swift in Sources */,
 				DE99C6B92E953F95F3DF3969 /* CannedResponseUtil.swift in Sources */,
 			);
